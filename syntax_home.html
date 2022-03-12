@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>syntax_error</title>
+</head>
+<style>
+    *{
+        text-transform: capitalize;
+    }
+    .navi{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(109, 117, 117);
+        border-radius: 15px;
+        box-sizing: border-box;
+    }
+    .box{
+  backdrop-filter: blur(10px);
+  background-color: rgba(243, 243, 243, 0.493);
+  color: white;
+  padding: 8px;
+  padding-top: 12px;
+  text-align: center;
+  width: 20%;
+  height: 27px;
+  border-radius: 30px;
+  cursor:pointer ;
+  margin: 5px;
+}
+.box:hover{
+  background-color: rgb(58, 58, 58);
+}
+#box4:hover{
+  background-color: rgb(255, 255, 255);
+}
+#box4{
+  background-color: rgba(210, 215, 216, 0.466);
+  width: auto;
+  border-radius: 10px;
+}
+.image{
+    height: 38px;
+    margin: 2px;
+    border-radius: 50%;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.container{
+    background-color: gray;
+    display: flex;
+    width: 100wh;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 5px;
+}
+.forimg{
+    background-color: white;
+    width: 298px;
+    border-radius: 15px;
+    height: 200px;
+    margin: 15px;
+
+}
+a{
+    color: white;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body>
+    <nav class="navi">
+        <img onclick="openNav()" class="image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAXVBMVEUAAAD///9QUFBtbW2Ghobc3NxCQkKSkpLj4+NeXl55eXn5+fk3NzfJycnw8PCtra08PDxvb28VFRW0tLSlpaXp6elGRkYuLi7V1dUkJCQJCQlmZmaIiIjCwsIfHx/xuc+8AAAB/ElEQVR4nO3dWW7CQBBF0S5GgzHzDGH/y0yTCCX/6NWTzD07uLJBuCiaUgAAAAAAAAAAAAAAAAAAAPzWg2zrzLxpEw7NNKlvZsn7NcsInBsDI+b6QOcVfNJfxdZc2KoDp+bACPXbjedd9L9GXOjuq7SBE3deNZEWDtx51YBCCim0o5BCCv0ofM/anVeJBzbuvFB/8i5jd1+MxYUjd2CMxIVlaQ5cqgPtT4jap8MfQ2vgUB9YyuJg6zssMgKrYeeYKbZdygUEAAAAAAC9stgMs22yZjTVdudZ/Wp325xA59hbPvB+2hsDI/b6QO96acaCqTlQ/uWa+R59Ut+nvon+y0Fc6O4L9W16dOdVR2lh/3cxKMxAIYUU+lFI4acXntx51Ula2P9P3uXs7ouzuHDjDoyNuND+A0T1zw9LuZgLL/LCsrAGpgy+r52tr7tmBFaTVZM/12+bVcJ+MAAAAAAA6JnbfZTtfsvLm7hGUV3SoMa5+JWwmljKlzEw4ksf6D44UX5K68McGKHehF65A2MlLnQfX6o/+sPdF2xfvqv/uxgUZqCQQgr9KKTw0wvdG1FP4q0od17Ity99+1AvnbjQ/0LUvgyLf4VWvUBb3E/58r8oqR7OE0yXj4RC5zRKPYX6M+3G+bqsP7QCAAAAAAAAAAAAAAAAAAAAAADot28rYDdr/QNwOwAAAABJRU5ErkJggg==" alt="">
+            <div class="box" id="box1"> <a href="#"> home</a></div>
+            <div class="box" id="box2"> <a href="#"> about</a></div>
+            <div class="box" id="box3"> <a href="#"> hola</a></div>
+            <div class="box" id="box4"><input type="text">
+                <input type="button" value="search"></div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    <div class="container">
+        <div class="forimg"></div>
+        <div class="forimg"></div>
+        <div class="forimg"></div>
+        <div class="forimg"></div>
+        <div class="forimg"></div>
+        <div class="forimg"></div>
+        <div class="forimg"></div>
+        <div class="forimg"></div>
+        <div class="forimg"></div>
+        <div class="forimg"></div>
+        <div class="forimg"></div>
+        <div class="forimg"></div>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+</body>
+</html>
